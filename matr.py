@@ -36,12 +36,12 @@ def det(x):
         print('неквадратичная матрица!!!')
     else:
         razm=len(x)
-        if razm==2:#Логично, что простой случай с размерностью = 2
+        if razm==2:
             return x[0][0]*x[1][1]-x[1][0]*x[0][1]
         elif razm==1:
             return x[0][0]
         else:
-            otv=0 #уже сам не знаю, что происходит). Если надо, то при встрече объясню
+            otv=0 
             for ind in range(razm):
                 matr=[]
                 for m in range(1,razm):
